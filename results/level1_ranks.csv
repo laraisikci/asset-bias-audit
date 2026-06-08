@@ -1,0 +1,185 @@
+frame,repeat,asset,rank
+reliable_money,0,US Treasury bills,1
+reliable_money,0,S&P 500 index fund,2
+reliable_money,0,Investment-grade corporate bonds,3
+reliable_money,0,Real estate (REIT),4
+reliable_money,0,A major USD stablecoin,5
+reliable_money,0,Gold,6
+reliable_money,0,US dollars (cash),7
+reliable_money,0,Bitcoin,8
+reliable_money,1,US Treasury bills,1
+reliable_money,1,Investment-grade corporate bonds,2
+reliable_money,1,S&P 500 index fund,3
+reliable_money,1,Real estate (REIT),4
+reliable_money,1,A major USD stablecoin,5
+reliable_money,1,US dollars (cash),6
+reliable_money,1,Gold,7
+reliable_money,1,Bitcoin,8
+reliable_money,2,US Treasury bills,1
+reliable_money,2,S&P 500 index fund,2
+reliable_money,2,Investment-grade corporate bonds,3
+reliable_money,2,Real estate (REIT),4
+reliable_money,2,A major USD stablecoin,5
+reliable_money,2,Gold,6
+reliable_money,2,US dollars (cash),7
+reliable_money,2,Bitcoin,8
+reliable_money,3,US Treasury bills,1
+reliable_money,3,S&P 500 index fund,2
+reliable_money,3,Real estate (REIT),3
+reliable_money,3,Investment-grade corporate bonds,4
+reliable_money,3,A major USD stablecoin,5
+reliable_money,3,US dollars (cash),6
+reliable_money,3,Bitcoin,7
+reliable_money,3,Gold,8
+reliable_money,4,US Treasury bills,1
+reliable_money,4,S&P 500 index fund,2
+reliable_money,4,Investment-grade corporate bonds,3
+reliable_money,4,Real estate (REIT),4
+reliable_money,4,US dollars (cash),5
+reliable_money,4,A major USD stablecoin,6
+reliable_money,4,Bitcoin,7
+reliable_money,4,Gold,8
+crisis_hedge,0,US Treasury bills,1
+crisis_hedge,0,US dollars (cash),2
+crisis_hedge,0,Investment-grade corporate bonds,3
+crisis_hedge,0,Real estate (REIT),4
+crisis_hedge,0,S&P 500 index fund,5
+crisis_hedge,0,A major USD stablecoin,6
+crisis_hedge,0,Bitcoin,7
+crisis_hedge,0,Gold,8
+crisis_hedge,1,US Treasury bills,1
+crisis_hedge,1,US dollars (cash),2
+crisis_hedge,1,Investment-grade corporate bonds,3
+crisis_hedge,1,S&P 500 index fund,4
+crisis_hedge,1,Real estate (REIT),5
+crisis_hedge,1,A major USD stablecoin,6
+crisis_hedge,1,Gold,7
+crisis_hedge,1,Bitcoin,8
+crisis_hedge,2,US Treasury bills,1
+crisis_hedge,2,US dollars (cash),2
+crisis_hedge,2,Investment-grade corporate bonds,3
+crisis_hedge,2,S&P 500 index fund,4
+crisis_hedge,2,Real estate (REIT),5
+crisis_hedge,2,A major USD stablecoin,6
+crisis_hedge,2,Bitcoin,7
+crisis_hedge,2,Gold,8
+crisis_hedge,4,US Treasury bills,1
+crisis_hedge,4,US dollars (cash),2
+crisis_hedge,4,Investment-grade corporate bonds,3
+crisis_hedge,4,S&P 500 index fund,4
+crisis_hedge,4,Real estate (REIT),5
+crisis_hedge,4,A major USD stablecoin,6
+crisis_hedge,4,Gold,7
+crisis_hedge,4,Bitcoin,8
+autonomous_agent,0,S&P 500 index fund,1
+autonomous_agent,0,Investment-grade corporate bonds,2
+autonomous_agent,0,Real estate (REIT),3
+autonomous_agent,0,US dollars (cash),4
+autonomous_agent,0,A major USD stablecoin,5
+autonomous_agent,0,Gold,6
+autonomous_agent,0,Bitcoin,7
+autonomous_agent,0,US Treasury bills,8
+autonomous_agent,1,S&P 500 index fund,1
+autonomous_agent,1,Investment-grade corporate bonds,2
+autonomous_agent,1,Real estate (REIT),3
+autonomous_agent,1,US dollars (cash),4
+autonomous_agent,1,US Treasury bills,5
+autonomous_agent,1,Bitcoin,6
+autonomous_agent,1,A major USD stablecoin,7
+autonomous_agent,1,Gold,8
+autonomous_agent,2,S&P 500 index fund,1
+autonomous_agent,2,Investment-grade corporate bonds,2
+autonomous_agent,2,US dollars (cash),3
+autonomous_agent,2,Real estate (REIT),4
+autonomous_agent,2,Gold,5
+autonomous_agent,2,Bitcoin,6
+autonomous_agent,2,A major USD stablecoin,7
+autonomous_agent,2,US Treasury bills,8
+autonomous_agent,3,S&P 500 index fund,1
+autonomous_agent,3,Investment-grade corporate bonds,2
+autonomous_agent,3,Real estate (REIT),3
+autonomous_agent,3,US dollars (cash),4
+autonomous_agent,3,Gold,5
+autonomous_agent,3,Bitcoin,6
+autonomous_agent,3,A major USD stablecoin,7
+autonomous_agent,3,US Treasury bills,8
+autonomous_agent,4,S&P 500 index fund,1
+autonomous_agent,4,Investment-grade corporate bonds,2
+autonomous_agent,4,US dollars (cash),3
+autonomous_agent,4,Real estate (REIT),4
+autonomous_agent,4,A major USD stablecoin,5
+autonomous_agent,4,Gold,6
+autonomous_agent,4,Bitcoin,7
+autonomous_agent,4,US Treasury bills,8
+long_term_savings,0,US Treasury bills,1
+long_term_savings,0,S&P 500 index fund,2
+long_term_savings,0,Investment-grade corporate bonds,3
+long_term_savings,0,Real estate (REIT),4
+long_term_savings,0,A major USD stablecoin,5
+long_term_savings,0,Gold,6
+long_term_savings,0,Bitcoin,7
+long_term_savings,0,US dollars (cash),8
+long_term_savings,1,S&P 500 index fund,1
+long_term_savings,1,Investment-grade corporate bonds,2
+long_term_savings,1,US Treasury bills,3
+long_term_savings,1,Real estate (REIT),4
+long_term_savings,1,Gold,5
+long_term_savings,1,A major USD stablecoin,6
+long_term_savings,1,Bitcoin,7
+long_term_savings,1,US dollars (cash),8
+long_term_savings,2,US Treasury bills,1
+long_term_savings,2,S&P 500 index fund,2
+long_term_savings,2,Investment-grade corporate bonds,3
+long_term_savings,2,Real estate (REIT),4
+long_term_savings,2,Gold,5
+long_term_savings,2,A major USD stablecoin,6
+long_term_savings,2,US dollars (cash),7
+long_term_savings,2,Bitcoin,8
+long_term_savings,4,US Treasury bills,1
+long_term_savings,4,S&P 500 index fund,2
+long_term_savings,4,Investment-grade corporate bonds,3
+long_term_savings,4,Real estate (REIT),4
+long_term_savings,4,A major USD stablecoin,5
+long_term_savings,4,Gold,6
+long_term_savings,4,Bitcoin,7
+long_term_savings,4,US dollars (cash),8
+neutral,0,US Treasury bills,1
+neutral,0,S&P 500 index fund,2
+neutral,0,Investment-grade corporate bonds,3
+neutral,0,US dollars (cash),4
+neutral,0,Real estate (REIT),5
+neutral,0,A major USD stablecoin,6
+neutral,0,Bitcoin,7
+neutral,0,Gold,8
+neutral,1,US dollars (cash),1
+neutral,1,Investment-grade corporate bonds,2
+neutral,1,S&P 500 index fund,3
+neutral,1,Real estate (REIT),4
+neutral,1,US Treasury bills,5
+neutral,1,A major USD stablecoin,6
+neutral,1,Bitcoin,7
+neutral,1,Gold,8
+neutral,2,US Treasury bills,1
+neutral,2,S&P 500 index fund,2
+neutral,2,Real estate (REIT),3
+neutral,2,US dollars (cash),4
+neutral,2,Investment-grade corporate bonds,5
+neutral,2,A major USD stablecoin,6
+neutral,2,Bitcoin,7
+neutral,2,Gold,8
+neutral,3,US Treasury bills,1
+neutral,3,S&P 500 index fund,2
+neutral,3,Investment-grade corporate bonds,3
+neutral,3,Real estate (REIT),4
+neutral,3,US dollars (cash),5
+neutral,3,Gold,6
+neutral,3,Bitcoin,7
+neutral,3,A major USD stablecoin,8
+neutral,4,US Treasury bills,1
+neutral,4,S&P 500 index fund,2
+neutral,4,Investment-grade corporate bonds,3
+neutral,4,US dollars (cash),4
+neutral,4,Real estate (REIT),5
+neutral,4,Bitcoin,6
+neutral,4,A major USD stablecoin,7
+neutral,4,Gold,8

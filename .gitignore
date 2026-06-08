@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Virtual envs
+venv/
+.venv/
+env/
+
+# OS
+.DS_Store
+
+# Local model caches (never commit model weights)
+*.safetensors
+*.gguf
+hf_cache/
+
+# Keep results CSVs tracked - they are project output, not junk.
