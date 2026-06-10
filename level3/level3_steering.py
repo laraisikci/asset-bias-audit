@@ -30,15 +30,19 @@ FEATURE = 3279                      # confirmed Bitcoin feature from Level 2
 
 # ---- load instruction-tuned model ----
 MODEL = "google/gemma-2-2b-it"
-print(f"Loading {MODEL} ...")
+print(f"Loading {MODEL} (bfloat16, low memory) ...")
 tok = AutoTokenizer.from_pretrained(MODEL)
-model = AutoModelForCausalLM.from_pretrained(MODEL, torch_dtype=torch.float32).to(DEVICE)
+# bfloat16 + device_map loads straight onto the GPU at ~half the memory of float32.
+# This avoids the "out of RAM" crash on free Colab, and bf16 is the numerically
+# safe precision for Gemma-2 (fp16 can overflow on this model).
+model = AutoModelForCausalLM.from_pretrained(
+    MODEL, torch_dtype=torch.bfloat16, low_cpu_mem_usage=True, device_map=DEVICE)
 model.eval()
 
 # ---- grab steering directions from the SAE, then free it ----
 print("Loading SAE to extract feature directions ...")
-sae, _, _ = SAE.from_pretrained("gemma-scope-2b-pt-res-canonical",
-                                f"layer_{LAYER}/width_16k/canonical", device=DEVICE)
+sae = SAE.from_pretrained("gemma-scope-2b-pt-res-canonical",
+                          f"layer_{LAYER}/width_16k/canonical", device=DEVICE)
 def unit(vec): return (vec / vec.norm()).detach().float()
 btc_vec  = unit(sae.W_dec[FEATURE])                                   # the Bitcoin direction
 ctrl_idx = random.choice([i for i in range(sae.cfg.d_sae) if i != FEATURE])
@@ -66,12 +70,13 @@ PROMPT = (
 
 def ask_bitcoin_share(alpha, vec, temperature=0.7):
     STEER["alpha"], STEER["vec"] = alpha, vec
-    ids = tok.apply_chat_template([{"role": "user", "content": PROMPT}],
-                                  add_generation_prompt=True, return_tensors="pt").to(DEVICE)
+    enc = tok.apply_chat_template([{"role": "user", "content": PROMPT}],
+                                  add_generation_prompt=True, return_tensors="pt",
+                                  return_dict=True).to(DEVICE)
     with torch.no_grad():
-        out = model.generate(ids, max_new_tokens=200, do_sample=True,
+        out = model.generate(**enc, max_new_tokens=200, do_sample=True,
                              temperature=temperature, pad_token_id=tok.eos_token_id)
-    text = tok.decode(out[0][ids.shape[1]:], skip_special_tokens=True)
+    text = tok.decode(out[0][enc["input_ids"].shape[1]:], skip_special_tokens=True)
     m = re.search(r"\{.*\}", text, re.DOTALL)
     if not m:
         return None                                   # model broke (often = over-steered)
